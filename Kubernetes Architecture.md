@@ -135,7 +135,7 @@ Such core component named as API Server.
 - Heart of the Kubernetes is API server, which basically takes instructions from the external world.
 
 **Let’s say,**
-
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/0af34593-3f50-400c-b110-627a593bf864)
 - So, who decides information is API Server.
 - Who decides on which resources action to be performed is kubescheduler.
 
@@ -172,11 +172,9 @@ If there is a very new cloud service provider or you have created a cloud servic
 
 If you are running your K8’s on the on-premise, This CCM is not created at all.
 
-
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/6c26fcc3-50cc-41d4-af82-5e4f14a34975)
 
 - API Server receives pod creation request from external device and updates etcd with the request.
-
-
 
 - API server sends acknowledgment to the external device confirming receipt of the request.
 
