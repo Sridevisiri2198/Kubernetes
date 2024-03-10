@@ -13,7 +13,7 @@ So, before getting more into k8’s, we should know about why we have to use it 
 
 Let say, our host capacity is to allot resources to the 100 containers.
 
-
+![image] (C:\Users\Sri\Desktop\Sridevi Doc's\Notes\Dockerimage01.png)
 Hence, 99<sup>th</sup> pod is getting died because of 1<sup>st</sup> container consuming more resources.
 
 **Scenario-2:** 
