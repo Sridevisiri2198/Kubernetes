@@ -50,15 +50,14 @@ using below copy commands**
 
 **sudo nano postgresql.conf**
 
-![](./image1.png){width="5.460605861767279in"
-height="2.171294838145232in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/45c1436b-cb8d-4521-ba9c-5375ff1599f7)
+
 
 So, now scroll down and make changes under **connections and
 authentication** section by commenting the **listen_addresses line** and
 using **' \* '** in the place of localhost as shown below.
 
-![](./image2.png){width="5.145611329833771in"
-height="2.86173009623797in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/7030e5e3-e949-4747-93bc-16cf98fdae1e)
 
 **[Note:]{.underline}**
 
@@ -72,8 +71,8 @@ both localhost and remote machines.
 
 Add the last line as shown below,
 
-![](./image3.png){width="6.268055555555556in"
-height="1.5020833333333334in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/774c3a29-681c-4a1e-979e-fb9c3981f5d1)
+
 
 **Which means:**
 
@@ -252,13 +251,13 @@ you can check your deployments and pods using :
 
 **kubectl get deploy**
 
-![](./image4.png){width="5.296421697287839in"
-height="1.2234208223972003in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/bbb6a921-41a0-4e4a-bd22-be5562e2dfc6)
+
 
 **kubectl get pods**
 
-![](./image5.png){width="6.268055555555556in"
-height="1.1083333333333334in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/ae5656db-319c-436f-93fd-53d9e4e70ab9)
+
 
 Now, our pod is running, but without service file we cannot connect to
 our application just by running a pod.
@@ -314,8 +313,8 @@ After running the above command, you can check it using:
 
 **kubectl get svc**
 
-![](./image6.png){width="6.268055555555556in"
-height="1.3840277777777779in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/b8c7ee0b-0369-48e9-80d9-7dccf6f62cf9)
+
 
 So. by using this service details, we could be able to connect to our
 postgres database using DBeaver app.
@@ -333,13 +332,12 @@ Click the button below file, so that you can opt to select the
 databases, then select the postgres database then click on Next, as
 shown below:
 
-![](./image7.png){width="4.814226815398075in"
-height="3.3351837270341207in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/1d2feaf9-2716-44a0-8cb5-c95a9d7f9616)
+
 
 Inside Connection settings, Edit the details as follows:
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/26e21f1f-aa64-404f-b9d8-7499218bb45a)
 
-![](./image8.png){width="4.047937445319335in"
-height="4.2221675415573054in"}
 
 You can enter any database name to which you want to switch and It
 should be present inside your database.
@@ -347,15 +345,15 @@ should be present inside your database.
 Password and username will not change for any databases, click on Test
 connection then you will get an ouput as follows:
 
-![](./image9.png){width="2.937613735783027in"
-height="2.3570866141732285in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/45e4767b-9483-4f19-8d03-598917722428)
+
 
 Which means, you have successfully connected to your database.
 
 Now, you can proceed and click on finish.
 
-![](./image10.png){width="5.546383420822397in"
-height="4.139816272965879in"}
+![image](https://github.com/Sridevisiri2198/Kubernetes/assets/162767016/9f55644b-626a-4044-baea-bc45e3ff5e4a)
+
 
 Therefore, successfully we have done it and my pod is running with my
 configuration file and then finally I'm able to connect to my database
